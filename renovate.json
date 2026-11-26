@@ -6,6 +6,11 @@
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true
+    },
+    {
+      "description": "Drizzle publishes branch builds as prereleases with a commit hash (1.0.0-rc.5-ab785fc), which sort above the real release candidates.",
+      "matchPackageNames": ["drizzle-orm", "drizzle-kit"],
+      "allowedVersions": "!/-[0-9a-f]{7,}$/"
     }
   ]
 }
